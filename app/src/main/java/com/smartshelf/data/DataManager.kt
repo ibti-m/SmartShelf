@@ -60,13 +60,13 @@ object DataManager {
 
         inventoryList.addAll(
             listOf(
-                FoodItem("Milk", 1, today.plusDays(2), "Dairy"),
+                FoodItem("Milk (1L)", 1, today.plusDays(2), "Dairy"),
                 FoodItem("Eggs", 12, today.plusDays(10), "Dairy"),
-                FoodItem("Bread", 1, today.plusDays(1), "Bakery"),
-                FoodItem("Chicken", 2, today.plusDays(3), "Meat"),
+                FoodItem("Bread Loaf", 1, today.plusDays(2), "Bakery"),
+                FoodItem("Chicken Breasts", 4, today.plusDays(1), "Meat"),
                 FoodItem("Apples", 5, today.plusDays(7), "Fruit"),
                 FoodItem("Spinach", 1, today.minusDays(1), "Vegetable"),
-                FoodItem("Yogurt", 3, today.plusDays(4), "Dairy"),
+                FoodItem("Yogurt Cups", 3, today.plusDays(3), "Dairy"),
                 FoodItem("Rice", 1, today.plusDays(90), "Grain")
             )
         )

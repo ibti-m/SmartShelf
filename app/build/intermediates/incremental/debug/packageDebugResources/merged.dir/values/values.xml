@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#000000</color>
+    <color name="expiring_orange">#FB8C00</color>
+    <color name="expiring_red">#E53935</color>
     <color name="green_accent">#8BC34A</color>
     <color name="green_primary">#4CAF50</color>
     <color name="green_primary_dark">#388E3C</color>
     <color name="white">#FFFFFF</color>
     <string name="app_name">SmartShelf</string>
+    <string name="btn_move_shopping">To Shopping</string>
+    <string name="btn_use">Use</string>
+    <string name="expiring_soon_header">⏰ Expiring Soon</string>
     <string name="nav_home">Home</string>
     <string name="nav_inventory">Inventory</string>
     <string name="nav_recipes">Recipes</string>
     <string name="nav_shopping">Shopping</string>
+    <string name="no_expiring_items">No items expiring soon, nice!</string>
+    <string name="quantity_label">Qty: %1$d</string>
     <style name="Theme.SmartShelf" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/green_primary</item>
         <item name="colorPrimaryDark">@color/green_primary_dark</item>

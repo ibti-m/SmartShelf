@@ -1,38 +1,70 @@
 [
     {
-        "merged": "com.smartshelf.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.smartshelf.app-main-6:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.smartshelf.app-debug-4:/layout_activity_main.xml.flat",
-        "source": "com.smartshelf.app-main-6:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.smartshelf.app-debug-4:/layout_fragment_shopping.xml.flat",
-        "source": "com.smartshelf.app-main-6:/layout/fragment_shopping.xml"
-    },
-    {
-        "merged": "com.smartshelf.app-debug-4:/menu_bottom_nav_menu.xml.flat",
-        "source": "com.smartshelf.app-main-6:/menu/bottom_nav_menu.xml"
-    },
-    {
-        "merged": "com.smartshelf.app-debug-4:/layout_fragment_inventory.xml.flat",
-        "source": "com.smartshelf.app-main-6:/layout/fragment_inventory.xml"
-    },
-    {
-        "merged": "com.smartshelf.app-debug-4:/layout_fragment_recipes.xml.flat",
-        "source": "com.smartshelf.app-main-6:/layout/fragment_recipes.xml"
-    },
-    {
-        "merged": "com.smartshelf.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.smartshelf.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_bg_category_badge.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\bg_category_badge.xml"
     },
     {
         "merged": "com.smartshelf.app-debug-4:/layout_fragment_home.xml.flat",
         "source": "com.smartshelf.app-main-6:/layout/fragment_home.xml"
     },
     {
-        "merged": "com.smartshelf.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.smartshelf.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_item_expiring_food.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\item_expiring_food.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_fragment_home.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_fragment_recipes.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\fragment_recipes.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_ic_nav_recipes.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\ic_nav_recipes.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.smartshelf.app-debug-4:/menu_bottom_nav_menu.xml.flat",
+        "source": "com.smartshelf.app-main-6:/menu/bottom_nav_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_ic_nav_expiring.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\ic_nav_expiring.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_fragment_shopping.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\fragment_shopping.xml"
+    },
+    {
+        "merged": "com.smartshelf.app-debug-4:/drawable_ic_nav_inventory.xml.flat",
+        "source": "com.smartshelf.app-main-6:/drawable/ic_nav_inventory.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_fragment_inventory.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\fragment_inventory.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_ic_nav_shopping.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\ic_nav_shopping.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
     }
 ]

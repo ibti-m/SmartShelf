@@ -1413,6 +1413,8 @@ color dim_foreground_material_dark
 color dim_foreground_material_light
 color error_color_material_dark
 color error_color_material_light
+color expiring_orange
+color expiring_red
 color foreground_material_dark
 color foreground_material_light
 color green_accent
@@ -2973,6 +2975,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_category_badge
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3004,6 +3007,10 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_nav_expiring
+drawable ic_nav_inventory
+drawable ic_nav_recipes
+drawable ic_nav_shopping
 drawable ic_search_black_24
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3179,6 +3186,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_move_to_shopping
+id btn_use
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3452,6 +3461,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rv_expiring_items
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3559,8 +3569,14 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_empty_state
+id tv_expiring_header
 id tv_home_title
 id tv_inventory_title
+id tv_item_category
+id tv_item_expiry
+id tv_item_name
+id tv_item_quantity
 id tv_recipes_title
 id tv_shopping_title
 id unchecked
@@ -3723,6 +3739,7 @@ layout fragment_recipes
 layout fragment_shopping
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_expiring_food
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3824,6 +3841,8 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string btn_move_shopping
+string btn_use
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -3837,6 +3856,7 @@ string character_counter_pattern
 string clear_text_end_icon_content_description
 string error_a11y_label
 string error_icon_content_description
+string expiring_soon_header
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3947,11 +3967,13 @@ string nav_home
 string nav_inventory
 string nav_recipes
 string nav_shopping
+string no_expiring_items
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string quantity_label
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

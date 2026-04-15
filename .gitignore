@@ -5,7 +5,10 @@ gradle/wrapper/gradle-wrapper.jar
 gradlew
 gradlew.bat
 
-# Android Studio / IntelliJ
+# Local properties (contains SDK path)
+local.properties
+
+# Android Studio
 .idea/
 *.iml
 *.iws
