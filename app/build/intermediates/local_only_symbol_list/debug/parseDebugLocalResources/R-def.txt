@@ -9,6 +9,10 @@ color green_primary_dark
 color white
 drawable bg_category_badge
 drawable ic_launcher_foreground
+drawable ic_nav_expiring
+drawable ic_nav_inventory
+drawable ic_nav_recipes
+drawable ic_nav_shopping
 id bottom_navigation
 id btn_move_to_shopping
 id btn_use

@@ -10,12 +10,12 @@
     <string name="app_name">SmartShelf</string>
     <string name="btn_move_shopping">To Shopping</string>
     <string name="btn_use">Use</string>
-    <string name="expiring_soon_header">🔥 Expiring Soon</string>
+    <string name="expiring_soon_header">⏰ Expiring Soon</string>
     <string name="nav_home">Home</string>
     <string name="nav_inventory">Inventory</string>
     <string name="nav_recipes">Recipes</string>
     <string name="nav_shopping">Shopping</string>
-    <string name="no_expiring_items">No items expiring soon — nice!</string>
+    <string name="no_expiring_items">No items expiring soon, nice!</string>
     <string name="quantity_label">Qty: %1$d</string>
     <style name="Theme.SmartShelf" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/green_primary</item>

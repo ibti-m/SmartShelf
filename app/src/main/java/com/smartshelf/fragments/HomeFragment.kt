@@ -12,7 +12,7 @@ import com.smartshelf.R
 import com.smartshelf.adapters.ExpiringItemAdapter
 import com.smartshelf.data.DataManager
 
-// Home screen – shows items expiring within 3 days (and already expired).
+// Home screen: shows items expiring within 3 days (and already expired).
 class HomeFragment : Fragment() {
 
     private lateinit var adapter: ExpiringItemAdapter

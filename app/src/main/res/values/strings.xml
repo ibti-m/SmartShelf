@@ -9,8 +9,8 @@
     <string name="nav_recipes">Recipes</string>
 
     <!-- Home screen -->
-    <string name="expiring_soon_header">🔥 Expiring Soon</string>
-    <string name="no_expiring_items">No items expiring soon — nice!</string>
+    <string name="expiring_soon_header">⏰ Expiring Soon</string>
+    <string name="no_expiring_items">No items expiring soon, nice!</string>
     <string name="quantity_label">Qty: %1$d</string>
     <string name="btn_use">Use</string>
     <string name="btn_move_shopping">To Shopping</string>

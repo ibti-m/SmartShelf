@@ -4,22 +4,22 @@
 
     <item
         android:id="@+id/nav_home"
-        android:icon="@android:drawable/ic_menu_today"
+        android:icon="@drawable/ic_nav_expiring"
         android:title="@string/nav_home" />
 
     <item
         android:id="@+id/nav_inventory"
-        android:icon="@android:drawable/ic_menu_sort_by_size"
+        android:icon="@drawable/ic_nav_inventory"
         android:title="@string/nav_inventory" />
 
     <item
         android:id="@+id/nav_shopping"
-        android:icon="@android:drawable/ic_menu_edit"
+        android:icon="@drawable/ic_nav_shopping"
         android:title="@string/nav_shopping" />
 
     <item
         android:id="@+id/nav_recipes"
-        android:icon="@android:drawable/ic_menu_compass"
+        android:icon="@drawable/ic_nav_recipes"
         android:title="@string/nav_recipes" />
 
 </menu>
