@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- Title row: screen title + Add Item button -->
+    <!-- Title + subheader (left) alongside Add Item button (right) -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,29 +15,49 @@
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp">
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp">
 
-        <TextView
+        <!-- Left column: title + subheader -->
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/nav_inventory"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_inventory"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="@string/inventory_subheader"
+                android:textSize="14sp"
+                android:textColor="#666666" />
+
+        </LinearLayout>
+
+        <!-- Right column: Add Item button, centered vertically -->
         <com.google.android.material.button.MaterialButton
             android:id="@+id/fab_add_item"
-            style="@style/Widget.Material3.Button.TonalButton"
+            style="@style/Widget.Material3.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#E0E0E0"
+            android:layout_marginStart="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/green_primary"
             android:text="@string/btn_add_item"
-            android:textColor="#1565C0"
-            android:textSize="14sp"
-            android:textStyle="bold"
-            app:strokeColor="#000000"
-            app:strokeWidth="1dp" />
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -60,7 +80,6 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:clipToPadding="false"
-        android:layout_marginTop="-8dp"
         android:padding="8dp" />
 
 </LinearLayout>
