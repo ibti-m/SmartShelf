@@ -50,7 +50,7 @@ object DataManager {
     fun getExpiredItems(): List<FoodItem> =
         inventoryList.filter { it.isExpired() }
 
-    // Sample / seed data
+    // Sample/seed data
 
     // Pre-populate lists so screens aren't empty while prototyping
     fun loadSampleData() {
@@ -60,14 +60,14 @@ object DataManager {
 
         inventoryList.addAll(
             listOf(
-                FoodItem("Milk",        1, today.plusDays(2),  "Dairy"),
-                FoodItem("Eggs",       12, today.plusDays(10), "Dairy"),
-                FoodItem("Bread",       1, today.plusDays(1),  "Bakery"),
-                FoodItem("Chicken",     2, today.plusDays(3),  "Meat"),
-                FoodItem("Apples",      5, today.plusDays(7),  "Fruit"),
-                FoodItem("Spinach",     1, today.minusDays(1), "Vegetable"),
-                FoodItem("Yogurt",      3, today.plusDays(4),  "Dairy"),
-                FoodItem("Rice",        1, today.plusDays(90), "Grain")
+                FoodItem("Milk", 1, today.plusDays(2), "Dairy"),
+                FoodItem("Eggs", 12, today.plusDays(10), "Dairy"),
+                FoodItem("Bread", 1, today.plusDays(1), "Bakery"),
+                FoodItem("Chicken", 2, today.plusDays(3), "Meat"),
+                FoodItem("Apples", 5, today.plusDays(7), "Fruit"),
+                FoodItem("Spinach", 1, today.minusDays(1), "Vegetable"),
+                FoodItem("Yogurt", 3, today.plusDays(4), "Dairy"),
+                FoodItem("Rice", 1, today.plusDays(90), "Grain")
             )
         )
 
