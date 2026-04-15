@@ -74,20 +74,24 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_inv_delete"
-                style="@style/Widget.Material3.Button.TextButton"
+                style="@style/Widget.Material3.Button.TonalButton"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
                 android:text="@string/btn_delete"
                 android:textColor="@color/expiring_red"
-                android:textSize="12sp" />
+                android:textSize="12sp"
+                app:cornerRadius="18dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_inv_to_shopping"
-                style="@style/Widget.Material3.Button.OutlinedButton"
+                style="@style/Widget.Material3.Button.TonalButton"
                 android:layout_width="wrap_content"
                 android:layout_height="36dp"
                 android:text="@string/btn_move_shopping"
-                android:textSize="12sp" />
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:cornerRadius="18dp" />
         </LinearLayout>
 
     </LinearLayout>

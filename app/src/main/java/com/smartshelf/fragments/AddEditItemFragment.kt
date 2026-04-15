@@ -23,6 +23,7 @@ class AddEditItemFragment : Fragment() {
 
     companion object {
         const val ARG_EDIT_INDEX = "edit_index"
+        const val ARG_SHOPPING_ITEM_NAME = "shopping_item_name"
 
         // Predefined categories for the dropdown
         val CATEGORIES = listOf(
@@ -35,6 +36,7 @@ class AddEditItemFragment : Fragment() {
     // -1 means "add mode"; >= 0 means editing that inventory index
     private var editIndex = -1
     private var selectedDate: LocalDate? = null
+    private var shoppingItemName: String? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -58,6 +60,7 @@ class AddEditItemFragment : Fragment() {
 
         // Check if we're editing an existing item
         editIndex = arguments?.getInt(ARG_EDIT_INDEX, -1) ?: -1
+        shoppingItemName = arguments?.getString(ARG_SHOPPING_ITEM_NAME)
         if (editIndex >= 0 && editIndex < DataManager.inventoryList.size) {
             val item = DataManager.inventoryList[editIndex]
             title.text = getString(R.string.edit_item_title)
@@ -66,6 +69,9 @@ class AddEditItemFragment : Fragment() {
             selectedDate = item.expiryDate
             etExpiry.setText(item.expiryDate.format(DATE_FMT))
             dropdown.setText(item.category, false)
+        } else if (!shoppingItemName.isNullOrEmpty()) {
+            // Pre-fill name from shopping list; user must fill qty/date/category
+            etName.setText(shoppingItemName)
         }
 
         // Quantity +/- buttons
@@ -113,6 +119,11 @@ class AddEditItemFragment : Fragment() {
                 DataManager.inventoryList[editIndex] = foodItem
             } else {
                 DataManager.addItemToInventory(foodItem)
+            }
+
+            // If we arrived from the shopping list, remove the item there
+            if (!shoppingItemName.isNullOrEmpty()) {
+                DataManager.shoppingList.remove(shoppingItemName)
             }
 
             Toast.makeText(requireContext(), getString(R.string.item_saved), Toast.LENGTH_SHORT).show()

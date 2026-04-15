@@ -5,7 +5,7 @@
     <item
         android:id="@+id/nav_home"
         android:icon="@drawable/ic_nav_expiring"
-        android:title="@string/nav_home" />
+        android:title="Home" />
 
     <item
         android:id="@+id/nav_inventory"
@@ -15,7 +15,7 @@
     <item
         android:id="@+id/nav_shopping"
         android:icon="@drawable/ic_nav_shopping"
-        android:title="@string/nav_shopping" />
+        android:title="Shopping" />
 
     <item
         android:id="@+id/nav_recipes"

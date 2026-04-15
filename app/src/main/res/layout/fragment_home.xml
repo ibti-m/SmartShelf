@@ -12,22 +12,23 @@
         android:id="@+id/tv_home_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp"
         android:text="@string/nav_home"
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <!-- Section header -->
     <TextView
-        android:id="@+id/tv_expiring_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingBottom="8dp"
-        android:text="@string/expiring_soon_header"
-        android:textSize="16sp"
-        android:textColor="@color/expiring_red" />
+        android:text="@string/home_subheader"
+        android:textSize="14sp"
+        android:textColor="#666666" />
 
     <!-- Empty state message (shown when no items are expiring) -->
     <TextView
