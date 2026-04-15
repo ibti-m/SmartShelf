@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -18,6 +19,7 @@ class HomeFragment : Fragment() {
     private lateinit var adapter: ExpiringItemAdapter
     private lateinit var recyclerView: RecyclerView
     private lateinit var emptyState: TextView
+    private val updateListener: () -> Unit = { refreshList() }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,11 +35,11 @@ class HomeFragment : Fragment() {
             items = getExpiringItems(),
             onUse = { item ->
                 DataManager.removeItemFromInventory(item)
-                refreshList()
+                Toast.makeText(requireContext(), R.string.toast_item_removed, Toast.LENGTH_SHORT).show()
             },
             onMoveToShopping = { item ->
                 DataManager.moveItemToShoppingList(item)
-                refreshList()
+                Toast.makeText(requireContext(), R.string.toast_item_moved, Toast.LENGTH_SHORT).show()
             }
         )
 
@@ -46,6 +48,16 @@ class HomeFragment : Fragment() {
 
         refreshList()
         return view
+    }
+
+    override fun onStart() {
+        super.onStart()
+        DataManager.subscribe(updateListener)
+    }
+
+    override fun onStop() {
+        DataManager.unsubscribe(updateListener)
+        super.onStop()
     }
 
     // Reload expiring items, sort closest-expiry first, toggle empty state

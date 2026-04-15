@@ -45,4 +45,5 @@ dependencies {
 
     // Layout support
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
 }

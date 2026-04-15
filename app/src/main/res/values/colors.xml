@@ -11,4 +11,5 @@
     <!-- Status colors -->
     <color name="expiring_red">#E53935</color>
     <color name="expiring_orange">#FB8C00</color>
+    <color name="expiring_yellow">#FDD835</color>
 </resources>

@@ -1,6 +1,10 @@
 # Gradle
 .gradle/
 build/
+/app/build/
+**/build/
+*.apk
+*.ap_
 gradle/wrapper/gradle-wrapper.jar
 gradlew
 gradlew.bat

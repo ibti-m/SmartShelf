@@ -1,13 +1,15 @@
 package com.smartshelf.data
 
 import java.time.LocalDate
+import java.util.UUID
 
 // Represents a single food item stored in the user's inventory
 data class FoodItem(
-    val name: String,
-    val quantity: Int,
-    val expiryDate: LocalDate,
-    val category: String
+    val id: String = UUID.randomUUID().toString(),
+    var name: String,
+    var quantity: Int,
+    var expiryDate: LocalDate,
+    var category: String
 ) {
     // True when the item is past its expiry date
     fun isExpired(): Boolean = LocalDate.now().isAfter(expiryDate)

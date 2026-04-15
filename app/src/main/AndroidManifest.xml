@@ -8,6 +8,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartShelf">
+        <activity android:name=".RecipeDetailActivity" />
+        <activity android:name=".ItemDetailActivity" />
+        <activity android:name=".ItemFormActivity" />
 
         <!-- Single Activity entry point -->
         <activity

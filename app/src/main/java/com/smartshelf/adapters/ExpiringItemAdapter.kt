@@ -43,8 +43,13 @@ class ExpiringItemAdapter(
         holder.quantity.text = ctx.getString(R.string.quantity_label, item.quantity)
         holder.expiry.text = expiryLabel(item)
 
-        // Color the expiry text: red if expired, orange if expiring soon
-        val color = if (item.isExpired()) R.color.expiring_red else R.color.expiring_orange
+        val daysLeft = ChronoUnit.DAYS.between(LocalDate.now(), item.expiryDate)
+        val color = when {
+            daysLeft <= 0L -> R.color.expiring_red
+            daysLeft <= 2L -> R.color.expiring_orange
+            daysLeft == 3L -> R.color.expiring_yellow
+            else -> R.color.black
+        }
         holder.expiry.setTextColor(ctx.getColor(color))
 
         holder.btnUse.setOnClickListener { onUse(item) }
