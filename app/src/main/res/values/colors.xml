@@ -7,4 +7,8 @@
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
+
+    <!-- Status colors -->
+    <color name="expiring_red">#E53935</color>
+    <color name="expiring_orange">#FB8C00</color>
 </resources>
