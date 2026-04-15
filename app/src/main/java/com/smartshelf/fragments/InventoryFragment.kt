@@ -9,7 +9,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.button.MaterialButton
 import com.smartshelf.R
 import com.smartshelf.adapters.InventoryAdapter
 import com.smartshelf.data.DataManager
@@ -42,7 +42,7 @@ class InventoryFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.rv_inventory)
         emptyState   = view.findViewById(R.id.tv_inventory_empty)
-        val fab      = view.findViewById<FloatingActionButton>(R.id.fab_add_item)
+        val fab      = view.findViewById<MaterialButton>(R.id.fab_add_item)
 
         adapter = InventoryAdapter(
             items = DataManager.inventoryList.toList(),
@@ -72,9 +72,9 @@ class InventoryFragment : Fragment() {
         return view
     }
 
-    // Reload list from DataManager and toggle empty state
+    // Reload list from DataManager, sorted by nearest expiry first, toggle empty state
     private fun refreshList() {
-        val items = DataManager.inventoryList.toList()
+        val items = DataManager.inventoryList.sortedBy { it.expiryDate }
         adapter.updateItems(items)
 
         val hasItems = items.isNotEmpty()

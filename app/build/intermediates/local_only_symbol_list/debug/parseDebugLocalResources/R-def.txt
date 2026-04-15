@@ -8,6 +8,7 @@ color green_primary
 color green_primary_dark
 color white
 drawable bg_category_badge
+drawable bg_qty_button
 drawable ic_launcher_foreground
 drawable ic_nav_expiring
 drawable ic_nav_inventory
@@ -27,6 +28,7 @@ id et_expiry
 id et_name
 id fab_add_item
 id fragment_container
+id nav_divider
 id nav_home
 id nav_inventory
 id nav_recipes
@@ -63,6 +65,7 @@ mipmap ic_launcher_round
 string add_item
 string add_item_title
 string app_name
+string btn_add_item
 string btn_cancel
 string btn_delete
 string btn_move_shopping

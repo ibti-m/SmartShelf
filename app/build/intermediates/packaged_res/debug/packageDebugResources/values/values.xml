@@ -10,6 +10,7 @@
     <string name="add_item">Add item</string>
     <string name="add_item_title">Add Item</string>
     <string name="app_name">SmartShelf</string>
+    <string name="btn_add_item">Add Item +</string>
     <string name="btn_cancel">Cancel</string>
     <string name="btn_delete">Delete</string>
     <string name="btn_move_shopping">To Shopping</string>
