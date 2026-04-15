@@ -12,7 +12,15 @@ id nav_home
 id nav_inventory
 id nav_recipes
 id nav_shopping
+id tv_home_title
+id tv_inventory_title
+id tv_recipes_title
+id tv_shopping_title
 layout activity_main
+layout fragment_home
+layout fragment_inventory
+layout fragment_recipes
+layout fragment_shopping
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
