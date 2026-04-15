@@ -2992,6 +2992,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_arrow_back
 drawable ic_arrow_back_black_24
+drawable ic_barcode
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3198,6 +3199,7 @@ id btn_qty_minus
 id btn_qty_plus
 id btn_remove_shopping
 id btn_save
+id btn_scan_barcode
 id btn_use
 id buttonPanel
 id cache_measures
@@ -3872,6 +3874,7 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string add_item
+string add_item_subheader
 string add_item_title
 string androidx_startup
 string app_name
@@ -4033,6 +4036,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string quantity_label
+string quick_scan_desc
+string quick_scan_title
 string recipe_ingredients
 string recipe_steps
 string recipes_subheader
@@ -4045,6 +4050,7 @@ string shopping_subheader
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string tap_to_scan
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

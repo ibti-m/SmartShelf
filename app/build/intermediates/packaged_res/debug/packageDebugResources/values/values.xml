@@ -8,6 +8,7 @@
     <color name="green_primary_dark">#388E3C</color>
     <color name="white">#FFFFFF</color>
     <string name="add_item">Add item</string>
+    <string name="add_item_subheader">Enter item details below.</string>
     <string name="add_item_title">Add Item</string>
     <string name="app_name">SmartShelf</string>
     <string name="btn_add">Add</string>
@@ -37,11 +38,14 @@
     <string name="nav_shopping">Shopping List</string>
     <string name="no_expiring_items">No items expiring soon, nice!</string>
     <string name="quantity_label">Qty: %1$d</string>
+    <string name="quick_scan_desc">Scan a barcode to auto-fill item details.</string>
+    <string name="quick_scan_title">Quick Scan</string>
     <string name="recipe_ingredients">Ingredients</string>
     <string name="recipe_steps">Steps</string>
     <string name="recipes_subheader">Try one of our suggested recipes based on your nearly expired ingredients.</string>
     <string name="shopping_empty">Your shopping list is empty.</string>
     <string name="shopping_subheader">Save time by keeping track of your shopping list.</string>
+    <string name="tap_to_scan">Tap to scan barcode</string>
     <style name="Theme.SmartShelf" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/green_primary</item>
         <item name="colorPrimaryDark">@color/green_primary_dark</item>

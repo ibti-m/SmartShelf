@@ -10,6 +10,7 @@ color white
 drawable bg_category_badge
 drawable bg_qty_button
 drawable ic_arrow_back
+drawable ic_barcode
 drawable ic_launcher_foreground
 drawable ic_nav_expiring
 drawable ic_nav_inventory
@@ -26,6 +27,7 @@ id btn_qty_minus
 id btn_qty_plus
 id btn_remove_shopping
 id btn_save
+id btn_scan_barcode
 id btn_use
 id dropdown_category
 id et_expiry
@@ -81,6 +83,7 @@ menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string add_item
+string add_item_subheader
 string add_item_title
 string app_name
 string btn_add
@@ -110,9 +113,12 @@ string nav_recipes
 string nav_shopping
 string no_expiring_items
 string quantity_label
+string quick_scan_desc
+string quick_scan_title
 string recipe_ingredients
 string recipe_steps
 string recipes_subheader
 string shopping_empty
 string shopping_subheader
+string tap_to_scan
 style Theme.SmartShelf
