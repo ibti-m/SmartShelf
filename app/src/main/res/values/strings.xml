@@ -14,4 +14,9 @@
     <string name="quantity_label">Qty: %1$d</string>
     <string name="btn_use">Use</string>
     <string name="btn_move_shopping">To Shopping</string>
+
+    <!-- Inventory screen -->
+    <string name="inventory_empty">No items in your inventory yet.</string>
+    <string name="add_item">Add item</string>
+    <string name="btn_delete">Delete</string>
 </resources>
