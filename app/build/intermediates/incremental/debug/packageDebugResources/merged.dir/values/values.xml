@@ -7,10 +7,13 @@
     <color name="green_primary">#4CAF50</color>
     <color name="green_primary_dark">#388E3C</color>
     <color name="white">#FFFFFF</color>
+    <string name="add_item">Add item</string>
     <string name="app_name">SmartShelf</string>
+    <string name="btn_delete">Delete</string>
     <string name="btn_move_shopping">To Shopping</string>
     <string name="btn_use">Use</string>
     <string name="expiring_soon_header">⏰ Expiring Soon</string>
+    <string name="inventory_empty">No items in your inventory yet.</string>
     <string name="nav_home">Home</string>
     <string name="nav_inventory">Inventory</string>
     <string name="nav_recipes">Recipes</string>
