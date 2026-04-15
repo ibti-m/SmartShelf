@@ -74,9 +74,9 @@ class InventoryAdapter(
         if (item.isExpired()) return "Expired!"
         val daysLeft = ChronoUnit.DAYS.between(LocalDate.now(), item.expiryDate)
         return when (daysLeft) {
-            0L   -> "Today"
-            1L   -> "Tomorrow"
-            else -> item.expiryDate.format(dateFmt)
+            0L   -> "Expires today"
+            1L   -> "Expires tomorrow"
+            else -> "Expires ${item.expiryDate.format(dateFmt)}"
         }
     }
 }

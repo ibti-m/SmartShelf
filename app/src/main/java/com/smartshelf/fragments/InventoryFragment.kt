@@ -9,13 +9,26 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.button.MaterialButton
 import com.smartshelf.R
 import com.smartshelf.adapters.InventoryAdapter
 import com.smartshelf.data.DataManager
 
 // Inventory screen: shows all stored food items with delete/move actions
 class InventoryFragment : Fragment() {
+
+    // Navigate to the Add/Edit form fragment
+    private fun openAddEditScreen(editIndex: Int = -1) {
+        val fragment = AddEditItemFragment().apply {
+            arguments = android.os.Bundle().apply {
+                putInt(AddEditItemFragment.ARG_EDIT_INDEX, editIndex)
+            }
+        }
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
 
     private lateinit var adapter: InventoryAdapter
     private lateinit var recyclerView: RecyclerView
@@ -29,13 +42,14 @@ class InventoryFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.rv_inventory)
         emptyState   = view.findViewById(R.id.tv_inventory_empty)
-        val fab      = view.findViewById<FloatingActionButton>(R.id.fab_add_item)
+        val fab      = view.findViewById<MaterialButton>(R.id.fab_add_item)
 
         adapter = InventoryAdapter(
             items = DataManager.inventoryList.toList(),
             onClick = { item ->
-                // Placeholder - detail screen will be added later
-                Toast.makeText(requireContext(), "${item.name} details (coming soon)", Toast.LENGTH_SHORT).show()
+                // Open edit form pre-filled with this item's data
+                val index = DataManager.inventoryList.indexOf(item)
+                if (index >= 0) openAddEditScreen(index)
             },
             onDelete = { item ->
                 DataManager.removeItemFromInventory(item)
@@ -51,18 +65,16 @@ class InventoryFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter
 
-        // FAB stub - will navigate to Add Item screen later
-        fab.setOnClickListener {
-            Toast.makeText(requireContext(), "Add item (coming soon)", Toast.LENGTH_SHORT).show()
-        }
+        // FAB -> open Add Item form
+        fab.setOnClickListener { openAddEditScreen() }
 
         refreshList()
         return view
     }
 
-    // Reload list from DataManager and toggle empty state
+    // Reload list from DataManager, sorted by nearest expiry first, toggle empty state
     private fun refreshList() {
-        val items = DataManager.inventoryList.toList()
+        val items = DataManager.inventoryList.sortedBy { it.expiryDate }
         adapter.updateItems(items)
 
         val hasItems = items.isNotEmpty()
