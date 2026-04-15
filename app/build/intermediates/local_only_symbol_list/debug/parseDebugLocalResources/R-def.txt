@@ -1,0 +1,24 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color green_accent
+color green_primary
+color green_primary_dark
+color white
+drawable ic_launcher_foreground
+id bottom_navigation
+id fragment_container
+id nav_home
+id nav_inventory
+id nav_recipes
+id nav_shopping
+layout activity_main
+menu bottom_nav_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string nav_home
+string nav_inventory
+string nav_recipes
+string nav_shopping
+style Theme.SmartShelf
