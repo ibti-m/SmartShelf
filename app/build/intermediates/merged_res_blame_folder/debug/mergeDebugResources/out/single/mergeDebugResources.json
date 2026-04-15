@@ -4,16 +4,12 @@
         "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\menu\\bottom_nav_menu.xml"
     },
     {
-        "merged": "com.smartshelf.app-debug-4:/layout_fragment_inventory.xml.flat",
-        "source": "com.smartshelf.app-main-6:/layout/fragment_inventory.xml"
-    },
-    {
         "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_bg_category_badge.xml.flat",
         "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\bg_category_badge.xml"
     },
     {
-        "merged": "com.smartshelf.app-debug-4:/layout_item_inventory.xml.flat",
-        "source": "com.smartshelf.app-main-6:/layout/item_inventory.xml"
+        "merged": "com.smartshelf.app-debug-4:/layout_fragment_add_edit_item.xml.flat",
+        "source": "com.smartshelf.app-main-6:/layout/fragment_add_edit_item.xml"
     },
     {
         "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_item_expiring_food.xml.flat",
@@ -38,6 +34,10 @@
     {
         "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\layout_item_inventory.xml.flat",
+        "source": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-main-6:\\layout\\item_inventory.xml"
     },
     {
         "merged": "C:\\Users\\nrgal\\.gradle\\daemon\\8.6\\com.smartshelf.app-debug-4:\\drawable_ic_nav_inventory.xml.flat",

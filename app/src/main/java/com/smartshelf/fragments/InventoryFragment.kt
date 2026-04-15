@@ -17,6 +17,19 @@ import com.smartshelf.data.DataManager
 // Inventory screen: shows all stored food items with delete/move actions
 class InventoryFragment : Fragment() {
 
+    // Navigate to the Add/Edit form fragment
+    private fun openAddEditScreen(editIndex: Int = -1) {
+        val fragment = AddEditItemFragment().apply {
+            arguments = android.os.Bundle().apply {
+                putInt(AddEditItemFragment.ARG_EDIT_INDEX, editIndex)
+            }
+        }
+        parentFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
+
     private lateinit var adapter: InventoryAdapter
     private lateinit var recyclerView: RecyclerView
     private lateinit var emptyState: TextView
@@ -34,8 +47,9 @@ class InventoryFragment : Fragment() {
         adapter = InventoryAdapter(
             items = DataManager.inventoryList.toList(),
             onClick = { item ->
-                // Placeholder - detail screen will be added later
-                Toast.makeText(requireContext(), "${item.name} details (coming soon)", Toast.LENGTH_SHORT).show()
+                // Open edit form pre-filled with this item's data
+                val index = DataManager.inventoryList.indexOf(item)
+                if (index >= 0) openAddEditScreen(index)
             },
             onDelete = { item ->
                 DataManager.removeItemFromInventory(item)
@@ -51,10 +65,8 @@ class InventoryFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter
 
-        // FAB stub - will navigate to Add Item screen later
-        fab.setOnClickListener {
-            Toast.makeText(requireContext(), "Add item (coming soon)", Toast.LENGTH_SHORT).show()
-        }
+        // FAB -> open Add Item form
+        fab.setOnClickListener { openAddEditScreen() }
 
         refreshList()
         return view
